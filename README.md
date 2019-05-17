@@ -1,3 +1,7 @@
 # Argentine-Basin-Heat-Flux
 
-30th April update:
+### May 17th 
+To do:
+* create interpolation code 
+* make a TS diagram 
+* 
