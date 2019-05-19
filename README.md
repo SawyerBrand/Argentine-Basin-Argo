@@ -2,6 +2,18 @@
 
 ## Important Figures 
 
+### CT/AS Diagram:
+![12881_CT:AS](https://user-images.githubusercontent.com/40899724/57988505-407fe880-7a44-11e9-8f6c-587413044116.jpg)
+
+### Conservative Temperature Time Series:
+![12881_CT](https://user-images.githubusercontent.com/40899724/57988518-4ece0480-7a44-11e9-90c0-08b048ccedbe.jpg)
+
+*Time labels need to be fixed
+
+### Absolute Salinity Time Series:
+![12881_AS](https://user-images.githubusercontent.com/40899724/57988522-57263f80-7a44-11e9-84c7-892e5d92840d.jpg)
+
+*Time labels need to be fixed
 
 
 ## Important code: 
