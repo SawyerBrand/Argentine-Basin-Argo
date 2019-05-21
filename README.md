@@ -16,6 +16,12 @@
 *Time labels need to be fixed
 
 
+### Heat Content Integrated over Water Masses (But not interpolated in any way)
+Figure 1: The graphs represent the heat content at each measured depth, integrated (not interpolated) over depths of 0-400m, 400-1200m, and 1200-1400m. Because the data hasn’t been interpolated, it is a generalization of each depth, because they aren’t on a similar grid. The third graph, from 1200-1400m, has only a few data points because there are so many NaN values represented (Sawyer will have to go in and look at why that is and make sure it’s not just her processing code). 
+
+
+Figure 2: The two graphs represent heat integration over 0-400m, and 400-1200m. This was created to represent all the values that were given, and not include the NaN values that came up below 1200m. Therefore, they show non-interpolated integration of surface waters (subplot 1) and of mode to deep waters (subplot 2). 
+
 ## Important code: 
 ### interpolation.m 
 * within it is a function intARGO:
