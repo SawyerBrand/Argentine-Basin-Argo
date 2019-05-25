@@ -5,7 +5,7 @@ Definitely not going to be a budget. Talley says if we were going to do a budget
 
 DONE: Add a bathymetry map with trajectories
 
-!! Add Heat Flux maps with trajectories 
+DONE: Add Heat Flux maps with trajectories 
 
 !! Add Fresh Water Flux maps with trajectories 
 
