@@ -3,7 +3,7 @@
 ### May 22nd: 
 Definitely not going to be a budget. Talley says if we were going to do a budget, we would have started with the whole ARGO set. There is a possibility the quesiton I'm looking into is how mesoscale processes affect the carbon uptake in the region. Talley mentioned that I could use the udnerway pC02 taken by the A17 route cruises (WOCE Atlas? or AMT28? most likely AMT28). She also mentioned that Matt will have air-sea fluxes I can use to compare to what I have going, but they will not be a 100% match because I won't be closing a budget. I will have to include in the narrative why the floats I'm using were put where they were put, so that will be a sitdown conversation with Talley about why she chose them. 
 
-!! Add a bathymetry map with trajectories
+DONE: Add a bathymetry map with trajectories
 
 !! Add Heat Flux maps with trajectories 
 
