@@ -2,6 +2,9 @@
 
 ## Important Figures 
 
+### Trajectory Plots
+![12700_12881_Trajectory](https://user-images.githubusercontent.com/40899724/58374979-c648db80-7efd-11e9-826a-f7d5eba15c41.jpg)
+
 ### CT/AS Diagram:
 ![12881_CT:AS](https://user-images.githubusercontent.com/40899724/57988505-407fe880-7a44-11e9-8f6c-587413044116.jpg)
 
