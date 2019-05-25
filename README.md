@@ -3,6 +3,9 @@
 ## Important Figures 
 
 ### Trajectory Plots
+
+<img width="1098" alt="Screen Shot 2019-05-25 at 3 05 26 PM" src="https://user-images.githubusercontent.com/40899724/58375032-e927bf80-7efe-11e9-8651-2e0e10127872.png"> 
+
 ![12700_12881_Trajectory](https://user-images.githubusercontent.com/40899724/58374979-c648db80-7efd-11e9-826a-f7d5eba15c41.jpg)
 
 ### CT/AS Diagram:
