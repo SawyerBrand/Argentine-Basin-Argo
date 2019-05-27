@@ -14,15 +14,15 @@
 ## Basic Profiles
 
 ### Float 12881
+![T_P_12881](https://user-images.githubusercontent.com/40899724/58385945-32364d00-7fad-11e9-9a5f-d2f017eafdaf.jpg)
 ![AS_P_12881](https://user-images.githubusercontent.com/40899724/58385940-2cd90280-7fad-11e9-8f2e-a7039172ef11.jpg)
 ![DO_P_12881](https://user-images.githubusercontent.com/40899724/58385941-2d719900-7fad-11e9-83ec-6559d094071c.jpg)
 
-![T_P_12881](https://user-images.githubusercontent.com/40899724/58385945-32364d00-7fad-11e9-9a5f-d2f017eafdaf.jpg)
-
 ### Float 12700
-![DO_P_12700](https://user-images.githubusercontent.com/40899724/58385947-38c4c480-7fad-11e9-825c-6fec3cbe4f3d.jpg)
-![SA_P_12700](https://user-images.githubusercontent.com/40899724/58385948-38c4c480-7fad-11e9-82f5-66f1142a05d7.jpg)
 ![T_P_12700](https://user-images.githubusercontent.com/40899724/58385949-38c4c480-7fad-11e9-8890-380be65c2526.jpg)
+![SA_P_12700](https://user-images.githubusercontent.com/40899724/58385948-38c4c480-7fad-11e9-82f5-66f1142a05d7.jpg)
+![DO_P_12700](https://user-images.githubusercontent.com/40899724/58385947-38c4c480-7fad-11e9-825c-6fec3cbe4f3d.jpg)
+
 
 ### Conservative Temperature Time Series:
 ![12881_CT](https://user-images.githubusercontent.com/40899724/57988518-4ece0480-7a44-11e9-90c0-08b048ccedbe.jpg)
