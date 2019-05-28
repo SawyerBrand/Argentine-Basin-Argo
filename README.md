@@ -42,8 +42,14 @@ Figure 1: The graphs represent the heat content at each measured depth, integrat
 Figure 2: The two graphs represent heat integration over 0-400m, and 400-1200m. This was created to represent all the values that were given, and not include the NaN values that came up below 1200m. Therefore, they show non-interpolated integration of surface waters (subplot 1) and of mode to deep waters (subplot 2). 
 
 ## Important code: 
+
+### ArgoWaterfall.m 
+Creates the waterfall plots for Dr. Talley (In-situ temperature and salinity)
+
 ### interpolation.m 
 * within it is a function intARGO:
     which takes in time, depth, variable, nt, and dz.  It gets rid of profile with 70% of the data missing, and performs         spline interpolation at depth in between points, with no extrapolation. 
     then discards time series for each depth where more than 30% of the data is missing
     finally interpolates in time, and renames the variables.
+
+
