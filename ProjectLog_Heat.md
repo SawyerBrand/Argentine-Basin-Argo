@@ -29,4 +29,6 @@ It can sustain a temperature minimum because there is that change in salinity.
 Always find a way to show where the data was collected if you are doing interpolation, and include narratives for each plot so you have context for the data after looking at them solidly. 
 
 
+### May 28th:
+Q:  Does the permanent thermocline exist in the Atlantic? 
 
