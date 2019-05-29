@@ -3,7 +3,7 @@
 *One paragraph description(?) 
 
 ## List of what's in this repo:
-1. mfiles:
+1. **mfiles**:
 
     i. process_argo2.m
     
