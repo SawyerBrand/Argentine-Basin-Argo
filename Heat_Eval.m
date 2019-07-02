@@ -1,9 +1,5 @@
-function Heat_Eval(fn)
-data = process_argo(fn)
-basic_plots('12700.mat')
-
 %% data processing from the .nc file to a mat file, which is interpolated
-    function data = process_argo(fn)
+function data = process_argo(fn)
   
         outfile = '12700.mat';
         addpath(genpath('/Volumes/SOCCOM/Old_Research/GSW/Toolbox...'));
@@ -35,11 +31,34 @@ basic_plots('12700.mat')
         data.SP(data.SP >= 900) = NaN;
         data.DO(data.DO >= 900) = NaN;
         zint = 1:1:500;
-%         
+        
+          % depth
+          data.z = gsw_z_from_p(data.P, data.lat);
+
+          % absolute salinity
+          [data.sa, data.sstar, data.in_ocean] = gsw_SA_Sstar_from_SP(data.SP, data.P, data.lon, data.lat);
+
+          % potential temperature
+          data.pt = gsw_pt_from_t(data.sa, data.T, data.P, 0);
+
+          % conservative temperature
+          data.ct = gsw_CT_from_t(data.sa, data.T, data.P);
+
+          % potential density
+          data.pden = gsw_rho(data.sa, data.ct, 0);
+
+          % in situ density
+          data.rho = gsw_rho(data.sa, data.ct, data.P);
+
+          % brunt-väisälä frequency
+          [data.N2, data.p_mid] = gsw_Nsquared(data.sa, data.ct, data.P, data.lat);
+        
         data.P = double(data.P(isfinite(data.P)));
         data.T = double(data.T(isfinite(data.T)));
         data.SP = data.SP(isfinite(data.SP));
         data.DO = data.DO(isfinite(data.DO));
+        
+        
         
         
         for i = 1:1:size(data.T,1)
@@ -61,73 +80,4 @@ basic_plots('12700.mat')
 
         save(outfile);
 
-    end
-
-    function basic_plots(filen)
-        
-        f = load(filen);
-        
-        figure(1) 
-        hold on 
-       
-        title('Temperature vs Pressure 12700')
-        xlabel('In-Situ Temp (C)')
-        ylabel('In-situ Pressure')
-
-        set(gca,'Ydir','reverse')
-
-        for i = 1:size(f.gdata.T,1)
-            plot(f.gdata.T(i,:),f.gdata.P(i,:))
-        end 
-
-        hold off
-        
-        figure(2) 
-        hold on 
-       
-        title('Temperature vs Pressure 12700')
-        xlabel('In-Situ Temp (C)')
-        ylabel('In-situ Pressure')
-
-        set(gca,'Ydir','reverse')
-
-        for i = 1:size(f.gdata.T,1)
-            plot(f.data.T(i,:),f.data.P(i,:))
-        end 
-
-        hold off
-        
-        
-        figure(3) 
-        hold on 
-       
-        title('Absolute Salinity vs Pressure 12700')
-        xlabel('Absolute Salinity (g/kg)')
-        ylabel('In-situ Pressure')
-
-        set(gca,'Ydir','reverse')
-
-        for i = 1:size(f.gdata.sa,1)
-            plot((f.gdata.sa(i,:)),f.gdata.P(i,:))
-        end 
-
-        hold off
-        
-        figure(4) 
-        hold on 
-       
-        title('Dissolved Oxygen vs Pressure 12700')
-        xlabel('Dissolved Oxygen (???)')
-        ylabel('In-situ Pressure')
-
-        set(gca,'Ydir','reverse')
-
-        for i = 1:size(f.gdata.DO,1)
-            plot((f.gdata.DO(i,:)),f.gdata.P(i,:))
-        end 
-
-        hold off
-        
-    end    
-        
-end 
+end
